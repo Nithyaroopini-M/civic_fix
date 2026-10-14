@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment files - DO NOT commit secrets
+.env
+**/.env
+
+# SQLite database files
+backend/db/*.db
+backend/db/*.db-shm
+backend/db/*.db-wal
+
+# Uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Frontend build output
+frontend/dist/
+frontend/build/
+
+# Large dataset / image directories — do not commit
+image_data/
+**/dataset/
+ml/dataset/
+ml/runs/
+ml/*.pt
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
